@@ -1296,17 +1296,17 @@ b is [-1 -2  7]</code></pre>
 <div class="sourceCode cell-code" id="cb93"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> np.random.rand(<span class="dv">3</span>, <span class="dv">3</span>)</span>
 <span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a>A</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="49">
-<pre><code>array([[0.49590124, 0.09944723, 0.7960862 ],
-       [0.94523929, 0.93961865, 0.64487629],
-       [0.68754737, 0.27202753, 0.52742318]])</code></pre>
+<pre><code>array([[0.13729275, 0.38736619, 0.10662178],
+       [0.96081635, 0.02408111, 0.45643998],
+       [0.58243829, 0.44004963, 0.19941135]])</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="51">
 <div class="sourceCode cell-code" id="cb95"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span>:<span class="dv">2</span>].base</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="50">
-<pre><code>array([[0.49590124, 0.09944723, 0.7960862 ],
-       [0.94523929, 0.93961865, 0.64487629],
-       [0.68754737, 0.27202753, 0.52742318]])</code></pre>
+<pre><code>array([[0.13729275, 0.38736619, 0.10662178],
+       [0.96081635, 0.02408111, 0.45643998],
+       [0.58243829, 0.44004963, 0.19941135]])</code></pre>
 </div>
 </div>
 <p>Basic indexing creates views. In this example, the <code>base</code> of <code>A[1:2]</code> is <code>A</code>, which means that <code>A[1:2]</code> is a view of <code>A</code>.</p>
@@ -1382,20 +1382,20 @@ b is [-1  6  7]</code></pre>
 <span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.random.randint(<span class="dv">10</span>, size<span class="op">=</span><span class="dv">10</span>)</span>
 <span id="cb107-3"><a href="#cb107-3" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="56">
-<pre><code>array([3, 2, 4, 5, 5, 0, 3, 6, 6, 0])</code></pre>
+<pre><code>array([4, 7, 1, 2, 0, 1, 6, 1, 2, 8])</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="58">
 <div class="sourceCode cell-code" id="cb109"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a>np.where(a<span class="op">%</span><span class="dv">3</span> <span class="op">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="57">
-<pre><code>(array([2], dtype=int64),)</code></pre>
+<pre><code>(array([0, 1, 2, 5, 7], dtype=int64),)</code></pre>
 </div>
 </div>
 <p>Since the output is the <code>ndarray</code> of indexes, it is possible to directly use it to get those entries.</p>
 <div class="cell" data-execution_count="59">
 <div class="sourceCode cell-code" id="cb111"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>a[np.where(a<span class="op">%</span><span class="dv">3</span> <span class="op">==</span> <span class="dv">1</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="58">
-<pre><code>array([4])</code></pre>
+<pre><code>array([4, 7, 1, 1, 1])</code></pre>
 </div>
 </div>
 <p>Note that this is a fancy indexing, so the result is a copy.</p>
@@ -1406,22 +1406,22 @@ b is [-1  6  7]</code></pre>
 <div class="sourceCode cell-code" id="cb113"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> np.random.randint(<span class="dv">10</span>, size<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">3</span>))</span>
 <span id="cb113-2"><a href="#cb113-2" aria-hidden="true" tabindex="-1"></a>b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="59">
-<pre><code>array([[8, 3, 9],
-       [6, 8, 6],
-       [5, 7, 4]])</code></pre>
+<pre><code>array([[8, 1, 2],
+       [7, 2, 1],
+       [5, 8, 4]])</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="61">
 <div class="sourceCode cell-code" id="cb115"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a>np.where(b<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="60">
-<pre><code>(array([0, 1, 1, 1, 2], dtype=int64), array([0, 0, 1, 2, 2], dtype=int64))</code></pre>
+<pre><code>(array([0, 0, 1, 2, 2], dtype=int64), array([0, 2, 1, 1, 2], dtype=int64))</code></pre>
 </div>
 </div>
 <p>Similar to the previous case, we may directly using fancy indexing to get an <code>ndarray</code> of the entries, and what we get is a copy.</p>
 <div class="cell" data-execution_count="62">
 <div class="sourceCode cell-code" id="cb117"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a>b[np.where(b<span class="op">%</span><span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="61">
-<pre><code>array([8, 6, 8, 6, 4])</code></pre>
+<pre><code>array([8, 2, 2, 8, 4])</code></pre>
 </div>
 </div>
 <ul>
@@ -1516,13 +1516,13 @@ b is [-1  6  7]</code></pre>
 <span id="cb134-2"><a href="#cb134-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.random.randint(<span class="dv">100</span>, size<span class="op">=</span><span class="dv">10</span>)</span>
 <span id="cb134-3"><a href="#cb134-3" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="69">
-<pre><code>array([ 9, 71, 58, 63, 28,  8, 81, 16, 80, 59])</code></pre>
+<pre><code>array([38, 58, 59, 69, 40, 91, 95,  6, 11, 14])</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="72">
 <div class="sourceCode cell-code" id="cb136"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a>a[np.argsort(a)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="70">
-<pre><code>array([ 8,  9, 16, 28, 58, 59, 63, 71, 80, 81])</code></pre>
+<pre><code>array([ 6, 11, 14, 38, 40, 58, 59, 69, 91, 95])</code></pre>
 </div>
 </div>
 </div>
@@ -1760,7 +1760,7 @@ Tip
 <div class="cell" data-execution_count="90">
 <div class="sourceCode cell-code" id="cb167"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb167-1"><a href="#cb167-1" aria-hidden="true" tabindex="-1"></a>(results<span class="op">==</span><span class="st">'H'</span>).<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="88">
-<pre><code>8</code></pre>
+<pre><code>5</code></pre>
 </div>
 </div>
 </div>
@@ -1845,7 +1845,7 @@ Tip
 <span id="cb170-12"><a href="#cb170-12" aria-hidden="true" tabindex="-1"></a>    plt.plot(row)</span>
 <span id="cb170-13"><a href="#cb170-13" aria-hidden="true" tabindex="-1"></a>plt.legend([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="90">
-<pre><code>&lt;matplotlib.legend.Legend at 0x2564b016e00&gt;</code></pre>
+<pre><code>&lt;matplotlib.legend.Legend at 0x291c1516e60&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="intro_files/figure-html/cell-93-output-2.png" class="img-fluid"></p>
@@ -1900,7 +1900,7 @@ Tip
 <div class="cell" data-execution_count="94">
 <div class="sourceCode cell-code" id="cb174"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb174-1"><a href="#cb174-1" aria-hidden="true" tabindex="-1"></a>positions.<span class="bu">max</span>(axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="92">
-<pre><code>array([2., 5., 7.])</code></pre>
+<pre><code>array([1., 5., 7.])</code></pre>
 </div>
 </div>
 </div>
@@ -1924,8 +1924,9 @@ Tip
 <div class="cell" data-execution_count="95">
 <div class="sourceCode cell-code" id="cb176"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb176-1"><a href="#cb176-1" aria-hidden="true" tabindex="-1"></a>positions.<span class="bu">max</span>(axis<span class="op">=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="93">
-<pre><code>array([0., 1., 2., 1., 2., 1., 2., 3., 4., 5., 4., 3., 4., 5., 4., 3., 2.,
-       3., 2., 1., 2., 3., 4., 5., 4., 5., 6., 7., 6., 5., 6.])</code></pre>
+<pre><code>array([ 0.,  1.,  2.,  1.,  0., -1.,  0., -1.,  0.,  1.,  2.,  3.,  2.,
+        3.,  4.,  5.,  4.,  3.,  4.,  5.,  6.,  5.,  4.,  5.,  4.,  5.,
+        6.,  5.,  6.,  7.,  6.])</code></pre>
 </div>
 </div>
 </div>
@@ -1997,7 +1998,7 @@ Tip
 <div class="cell" data-execution_count="98">
 <div class="sourceCode cell-code" id="cb182"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb182-1"><a href="#cb182-1" aria-hidden="true" tabindex="-1"></a>positions.argmax(axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="96">
-<pre><code>array([ 2,  9, 27], dtype=int64)</code></pre>
+<pre><code>array([15, 15, 29], dtype=int64)</code></pre>
 </div>
 </div>
 </div>

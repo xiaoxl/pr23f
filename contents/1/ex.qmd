@@ -1,6 +1,4 @@
-
 ## Exercises
-
 
 ::: {#exr-}
 ## Hello world!
@@ -8,10 +6,9 @@
 Please set up a Python developing environment, for both `.py` file and `.ipynb` notebook file, that will be used across the semester. Then print `Hello World!`.
 :::
 
-
-
 ::: {#exr-}
 ## Define a function and play with `time`
+
 Please play with the following codes in a Jupyter notebook. We haven't talked about any of them right now. Try to guess what they do and write your guess in markdown cells.
 
 ```{python}
@@ -29,19 +26,19 @@ print("Time used: ", t1-t0)
 ```
 :::
 
-
-
-
 ::: {#exr-}
 ## Fancy Basketball plot
+
 Here is an example of the data analysis. We pull data from a dataset, filter the data according to our needs and plot it to visualize the data. This is just a show case. You are encouraged to play the code, make tweaks and see what would happen. You don't have to turn in anything.
 
 The data we choose is Stephen Curry's shots data in 2021-2022 regular season. First we need to load the data. The data is obtained from `nba.com` using `nba_api`. To install this package please go to [its PyPI page](https://pypi.org/project/nba-api/).
+
 ```{python}
 from nba_api.stats.static import players
 from nba_api.stats.endpoints import shotchartdetail
 player_dict = players.get_players()
 ```
+
 The shots data we need is in `shotchartdetail`. However to use it we need to know the id of `Stephen Curry` using the dataset `player_dict`.
 
 ```{python}
@@ -49,7 +46,9 @@ for player in player_dict:
     if player['full_name'] == 'Stephen Curry':
         print(player['id'])
 ```
-So the id of `Stephen Curry` is `201939`. Let's pull out his shots data in 2021-2022 season. 
+
+So the id of `Stephen Curry` is `201939`. Let's pull out his shots data in 2021-2022 season.
+
 ```{python}
 results = shotchartdetail.ShotChartDetail(
             team_id = 0,
@@ -60,7 +59,8 @@ results = shotchartdetail.ShotChartDetail(
 df = results.get_data_frames()[0]
 df.head()
 ```
-`df` is the results we get in terms of a `DataFrame`, and we show the first `5` records as an example. 
+
+`df` is the results we get in terms of a `DataFrame`, and we show the first `5` records as an example.
 
 These are all attempts. We are interested in all made. By looking at all the columns, we find a column called `SHOT_MADE_FLAG` which shows what we want. Therefore we will use it to filter the records.
 
@@ -68,10 +68,10 @@ These are all attempts. We are interested in all made. By looking at all the col
 df_made = df[df['SHOT_MADE_FLAG']==1]
 df_made.head()
 ```
-We also notice that there are two columns `LOC_X` and `LOC_Y` shows the coordinates of the attempts. We will use it to draw the heatmap. The full code for drawing out the court `draw_court` is folded below. It is from [Bradley Fay GitHub](https://github.com/bradleyfay/py-Goldsberry/blob/master/docs/Visualizing%20NBA%20Shots%20with%20py-Goldsberry.ipynb). 
 
+We also notice that there are two columns `LOC_X` and `LOC_Y` shows the coordinates of the attempts. We will use it to draw the heatmap. The full code for drawing out the court `draw_court` is folded below. It is from [Bradley Fay GitHub](https://github.com/bradleyfay/py-Goldsberry/blob/master/docs/Visualizing%20NBA%20Shots%20with%20py-Goldsberry.ipynb).
 
-::: {.callout-note}
+::: callout-note
 Note that, although `draw_cort` is long, it is not hard to understand. It just draws a court piece by piece.
 :::
 
@@ -175,6 +175,7 @@ _ = ax.set_ylim(0, 400)
 ```
 :::
 
+````{=html}
 <!-- 
 <details>
 <summary>Click for Hint.</summary>
@@ -201,3 +202,4 @@ Go through all records in `player_dict`. If the name of a player is `Stephen Cur
 *To be omitted.*
 :::
 </details> -->
+````

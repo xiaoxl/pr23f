@@ -1,53 +1,53 @@
 {
   "index.qmd": {
-    "index.html": "e90643fc"
+    "index.html": "3b104722"
   },
   "contents/1/intro.qmd": {
-    "intro.html": "b2dde4c0"
+    "intro.html": "7bd19014"
   },
   "contents/2/intro.qmd": {
-    "intro.html": "bf7233a9"
+    "intro.html": "f936d4d9"
   },
   "contents/3/intro.qmd": {
-    "intro.html": "9adbe39d"
+    "intro.html": "f3f97d21"
   },
   "contents/4/intro.qmd": {
-    "intro.html": "fe74bff9"
+    "intro.html": "833bba77"
   },
   "contents/5/intro.qmd": {
-    "intro.html": "f15d422a"
+    "intro.html": "33b30354"
   },
   "contents/6/intro.qmd": {
-    "intro.html": "05d6260c"
+    "intro.html": "13b93ca8"
   },
   "contents/7/intro.qmd": {
-    "intro.html": "34b9157f"
+    "intro.html": "b3e4f2ce"
   },
   "contents/8/intro.qmd": {
-    "intro.html": "5c158ea2"
+    "intro.html": "90dee205"
   },
   "contents/9/intro.qmd": {
-    "intro.html": "f2a5b336"
+    "intro.html": "55460704"
   },
   "contents/10/intro.qmd": {
-    "intro.html": "922456ff"
+    "intro.html": "3eaf5960"
   },
   "contents/app/setup.qmd": {
-    "setup.html": "08626c28"
+    "setup.html": "5875f41a"
   },
   "contents/app/path.qmd": {
-    "path.html": "1da04ad6"
+    "path.html": "27461eef"
   },
   "contents/app/virtenv.qmd": {
-    "virtenv.html": "d78f10be"
+    "virtenv.html": "c78ddca6"
   },
   "contents/app/concepts.qmd": {
-    "concepts.html": "9218e540"
+    "concepts.html": "39d9707c"
   },
   "contents/app/r.qmd": {
-    "r.html": "965524bf"
+    "r.html": "ef546d13"
   },
   "contents/app/re.qmd": {
-    "re.html": "a7f80bb7"
+    "re.html": "3ddebfb8"
   }
 }
