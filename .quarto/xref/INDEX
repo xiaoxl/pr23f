@@ -1,0 +1,53 @@
+{
+  "index.qmd": {
+    "index.html": "e90643fc"
+  },
+  "contents/1/intro.qmd": {
+    "intro.html": "b2dde4c0"
+  },
+  "contents/2/intro.qmd": {
+    "intro.html": "bf7233a9"
+  },
+  "contents/3/intro.qmd": {
+    "intro.html": "9adbe39d"
+  },
+  "contents/4/intro.qmd": {
+    "intro.html": "fe74bff9"
+  },
+  "contents/5/intro.qmd": {
+    "intro.html": "f15d422a"
+  },
+  "contents/6/intro.qmd": {
+    "intro.html": "05d6260c"
+  },
+  "contents/7/intro.qmd": {
+    "intro.html": "34b9157f"
+  },
+  "contents/8/intro.qmd": {
+    "intro.html": "5c158ea2"
+  },
+  "contents/9/intro.qmd": {
+    "intro.html": "f2a5b336"
+  },
+  "contents/10/intro.qmd": {
+    "intro.html": "922456ff"
+  },
+  "contents/app/setup.qmd": {
+    "setup.html": "08626c28"
+  },
+  "contents/app/path.qmd": {
+    "path.html": "1da04ad6"
+  },
+  "contents/app/virtenv.qmd": {
+    "virtenv.html": "d78f10be"
+  },
+  "contents/app/concepts.qmd": {
+    "concepts.html": "9218e540"
+  },
+  "contents/app/r.qmd": {
+    "r.html": "965524bf"
+  },
+  "contents/app/re.qmd": {
+    "re.html": "a7f80bb7"
+  }
+}
