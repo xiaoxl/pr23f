@@ -1,1 +1,1 @@
-{"entries":[{"order":{"section":[2,0,0,0,0,0,0],"number":1},"key":"sec-path"}],"options":{"chapters-appendix":true,"chapters-alpha":true,"chapters":true,"subref-labels":"roman i","labels":"arabic","chapter-id":"sec-path"},"headings":["sec-path"]}
+{"headings":["sec-path"],"entries":[{"key":"sec-path","order":{"number":1,"section":[2,0,0,0,0,0,0]}}],"options":{"chapter-id":"sec-path","chapters-alpha":true,"chapters-appendix":true,"chapters":true,"subref-labels":"roman i","labels":"arabic"}}

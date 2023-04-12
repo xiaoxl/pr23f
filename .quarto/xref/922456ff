@@ -1,1 +1,1 @@
-{"options":{"labels":"arabic","subref-labels":"roman i","chapters":true},"entries":[{"order":{"number":10,"section":[10,2,0,0,0,0,0]},"key":"exm-","caption":""}],"headings":["who-tb-dataset","us-babynames","references"]}
+{"options":{"chapters":true,"labels":"arabic","subref-labels":"roman i"},"entries":[{"caption":"","key":"exm-","order":{"number":10,"section":[10,2,0,0,0,0,0]}}],"headings":["who-tb-dataset","us-babynames","references"]}
