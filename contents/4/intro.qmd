@@ -7,6 +7,9 @@ To use `pandas`, we just import it. In most cases you would like to use the alia
 import pandas as pd
 ```
 
+
+
+
 Since `DataFrame` is more like a table, the biggest questions here is not to do computations (which is still very important), but to retrieve, search, sort, merge, etc.. those data. 
 
 

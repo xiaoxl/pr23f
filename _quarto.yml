@@ -27,7 +27,7 @@ jupyter: base
 
 format:
   html:
-    theme: default
+    theme: lumen
     code-block-bg: true
     code-block-border-left: true #"#31BAE9"
     # code-line-numbers: true
