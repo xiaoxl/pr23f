@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -949,13 +949,12 @@ An example
 <div class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'b'</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
-<pre><code>b
-1    3
+<pre><code>1    3
 3    2
 2    2
 4    1
 5    1
-Name: count, dtype: int64</code></pre>
+Name: b, dtype: int64</code></pre>
 </div>
 </div>
 </div>
@@ -983,7 +982,7 @@ Caution
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">'a'</span>: [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], <span class="st">'b'</span>: [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]})</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>df[df[<span class="st">'a'</span>]<span class="op">==</span><span class="dv">3</span>][<span class="st">'b'</span>] <span class="op">=</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>C:\Users\Xinli\AppData\Local\Temp\ipykernel_48460\4018622545.py:2: SettingWithCopyWarning: 
+<pre><code>C:\Users\Xinli\AppData\Local\Temp\ipykernel_10540\4018622545.py:2: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -1496,59 +1495,59 @@ The basic usage of boolean indexing
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2023-01-01</td>
-<td>0.290875</td>
-<td>-2.242898</td>
-<td>-0.294997</td>
-<td>2.060525</td>
+<td>0.237607</td>
+<td>1.323886</td>
+<td>-0.658127</td>
+<td>-0.975299</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2023-01-02</td>
-<td>0.491597</td>
-<td>-0.471051</td>
-<td>1.996485</td>
-<td>0.434193</td>
+<td>-0.764331</td>
+<td>0.833129</td>
+<td>-2.136817</td>
+<td>-0.494983</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2023-01-03</td>
-<td>-0.842584</td>
-<td>1.631192</td>
-<td>0.836855</td>
-<td>1.411297</td>
+<td>-0.857309</td>
+<td>-0.025589</td>
+<td>0.802247</td>
+<td>-0.437641</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2023-01-04</td>
-<td>-1.438030</td>
-<td>-0.346131</td>
-<td>1.590445</td>
-<td>0.179492</td>
+<td>0.833024</td>
+<td>-0.345832</td>
+<td>-0.224655</td>
+<td>-1.669289</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2023-01-05</td>
-<td>0.441632</td>
-<td>1.037911</td>
-<td>-0.920696</td>
-<td>-0.476124</td>
+<td>-0.610940</td>
+<td>0.804115</td>
+<td>-0.147965</td>
+<td>-1.162376</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2023-01-06</td>
-<td>-0.897373</td>
-<td>0.652835</td>
-<td>1.422450</td>
-<td>1.891446</td>
+<td>1.149887</td>
+<td>-1.471409</td>
+<td>-1.546448</td>
+<td>0.805580</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2023-01-07</td>
-<td>1.457498</td>
-<td>0.320720</td>
-<td>0.041447</td>
-<td>1.325242</td>
+<td>1.150973</td>
+<td>-2.067331</td>
+<td>-1.544236</td>
+<td>-0.131534</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2023-01-08</td>
-<td>-1.083897</td>
-<td>0.100644</td>
-<td>-1.180959</td>
-<td>0.973353</td>
+<td>0.208735</td>
+<td>-0.331659</td>
+<td>-1.371364</td>
+<td>0.762330</td>
 </tr>
 </tbody>
 </table>
@@ -1575,31 +1574,38 @@ The basic usage of boolean indexing
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2023-01-01</td>
-<td>0.290875</td>
-<td>-2.242898</td>
-<td>-0.294997</td>
-<td>2.060525</td>
+<td>0.237607</td>
+<td>1.323886</td>
+<td>-0.658127</td>
+<td>-0.975299</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">2023-01-02</td>
-<td>0.491597</td>
-<td>-0.471051</td>
-<td>1.996485</td>
-<td>0.434193</td>
+<td data-quarto-table-cell-role="th">2023-01-04</td>
+<td>0.833024</td>
+<td>-0.345832</td>
+<td>-0.224655</td>
+<td>-1.669289</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2023-01-05</td>
-<td>0.441632</td>
-<td>1.037911</td>
-<td>-0.920696</td>
-<td>-0.476124</td>
+<td data-quarto-table-cell-role="th">2023-01-06</td>
+<td>1.149887</td>
+<td>-1.471409</td>
+<td>-1.546448</td>
+<td>0.805580</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2023-01-07</td>
-<td>1.457498</td>
-<td>0.320720</td>
-<td>0.041447</td>
-<td>1.325242</td>
+<td>1.150973</td>
+<td>-2.067331</td>
+<td>-1.544236</td>
+<td>-0.131534</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2023-01-08</td>
+<td>0.208735</td>
+<td>-0.331659</td>
+<td>-1.371364</td>
+<td>0.762330</td>
 </tr>
 </tbody>
 </table>
@@ -1633,11 +1639,18 @@ The basic usage of boolean indexing
 </thead>
 <tbody>
 <tr class="odd">
+<td data-quarto-table-cell-role="th">2023-01-06</td>
+<td>1.149887</td>
+<td>-1.471409</td>
+<td>-1.546448</td>
+<td>0.805580</td>
+</tr>
+<tr class="even">
 <td data-quarto-table-cell-role="th">2023-01-07</td>
-<td>1.457498</td>
-<td>0.32072</td>
-<td>0.041447</td>
-<td>1.325242</td>
+<td>1.150973</td>
+<td>-2.067331</td>
+<td>-1.544236</td>
+<td>-0.131534</td>
 </tr>
 </tbody>
 </table>
@@ -2907,18 +2920,18 @@ dtype: object</code></pre>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>-0.233174</td>
-<td>-0.286073</td>
+<td>0.465369</td>
+<td>1.539442</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>-0.062418</td>
-<td>-0.685412</td>
+<td>2.196586</td>
+<td>-1.541876</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>0.904465</td>
-<td>-1.910300</td>
+<td>0.371981</td>
+<td>0.309551</td>
 </tr>
 </tbody>
 </table>
@@ -4005,15 +4018,15 @@ An example
 <span id="cb102-6"><a href="#cb102-6" aria-hidden="true" tabindex="-1"></a>                          [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]])</span>
 <span id="cb102-7"><a href="#cb102-7" aria-hidden="true" tabindex="-1"></a>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="85">
-<pre><code>a  1   -0.079347
-   2    0.405421
-   3   -0.567482
-b  1   -0.062046
-   2   -0.582233
-c  3    1.335316
-   1   -0.035357
-d  2    1.183858
-   3   -0.611516
+<pre><code>a  1   -0.729463
+   2   -0.550397
+   3    1.271335
+b  1   -0.139672
+   2   -0.083897
+c  3    0.699671
+   1    0.184548
+d  2   -0.414853
+   3    0.931543
 dtype: float64</code></pre>
 </div>
 </div>
@@ -4021,18 +4034,18 @@ dtype: float64</code></pre>
 <div class="cell" data-execution_count="87">
 <div class="sourceCode cell-code" id="cb104"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'a'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="86">
-<pre><code>1   -0.079347
-2    0.405421
-3   -0.567482
+<pre><code>1   -0.729463
+2   -0.550397
+3    1.271335
 dtype: float64</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="88">
 <div class="sourceCode cell-code" id="cb106"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a>data.loc[:, <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="87">
-<pre><code>a    0.405421
-b   -0.582233
-d    1.183858
+<pre><code>a   -0.550397
+b   -0.083897
+d   -0.414853
 dtype: float64</code></pre>
 </div>
 </div>
@@ -4040,9 +4053,9 @@ dtype: float64</code></pre>
 <div class="cell" data-execution_count="89">
 <div class="sourceCode cell-code" id="cb108"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a>data.groupby(level<span class="op">=</span><span class="dv">1</span>).<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="88">
-<pre><code>1   -0.176751
-2    1.007047
-3    0.156319
+<pre><code>1   -0.684587
+2   -1.049147
+3    2.902549
 dtype: float64</code></pre>
 </div>
 </div>
@@ -4069,27 +4082,27 @@ dtype: float64</code></pre>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">a</td>
-<td>-0.079347</td>
-<td>0.405421</td>
-<td>-0.567482</td>
+<td>-0.729463</td>
+<td>-0.550397</td>
+<td>1.271335</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">b</td>
-<td>-0.062046</td>
-<td>-0.582233</td>
+<td>-0.139672</td>
+<td>-0.083897</td>
 <td>NaN</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">c</td>
-<td>-0.035357</td>
+<td>0.184548</td>
 <td>NaN</td>
-<td>1.335316</td>
+<td>0.699671</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">d</td>
 <td>NaN</td>
-<td>1.183858</td>
-<td>-0.611516</td>
+<td>-0.414853</td>
+<td>0.931543</td>
 </tr>
 </tbody>
 </table>
@@ -4100,15 +4113,15 @@ dtype: float64</code></pre>
 <div class="cell" data-execution_count="91">
 <div class="sourceCode cell-code" id="cb111"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>df.stack()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="90">
-<pre><code>a  1   -0.079347
-   2    0.405421
-   3   -0.567482
-b  1   -0.062046
-   2   -0.582233
-c  1   -0.035357
-   3    1.335316
-d  2    1.183858
-   3   -0.611516
+<pre><code>a  1   -0.729463
+   2   -0.550397
+   3    1.271335
+b  1   -0.139672
+   2   -0.083897
+c  1    0.184548
+   3    0.699671
+d  2   -0.414853
+   3    0.931543
 dtype: float64</code></pre>
 </div>
 </div>
@@ -5411,36 +5424,36 @@ An example
 <td data-quarto-table-cell-role="th">0</td>
 <td>a</td>
 <td>one</td>
-<td>-0.339109</td>
-<td>1.408502</td>
+<td>-0.350086</td>
+<td>-0.226207</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
 <td>a</td>
 <td>two</td>
-<td>-1.764599</td>
-<td>0.635052</td>
+<td>-0.107462</td>
+<td>1.464920</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
 <td>b</td>
 <td>one</td>
-<td>-1.170930</td>
-<td>0.775626</td>
+<td>-0.245411</td>
+<td>0.951813</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
 <td>b</td>
 <td>two</td>
-<td>-0.768360</td>
-<td>0.093249</td>
+<td>-0.346121</td>
+<td>-1.089006</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
 <td>a</td>
 <td>one</td>
-<td>-2.426196</td>
-<td>-0.511094</td>
+<td>0.155076</td>
+<td>-1.744793</td>
 </tr>
 </tbody>
 </table>
@@ -5453,7 +5466,7 @@ An example
 <div class="sourceCode cell-code" id="cb138"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a>grouped <span class="op">=</span> df[<span class="st">'data1'</span>].groupby(df[<span class="st">'key1'</span>])</span>
 <span id="cb138-2"><a href="#cb138-2" aria-hidden="true" tabindex="-1"></a>grouped</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="114">
-<pre><code>&lt;pandas.core.groupby.generic.SeriesGroupBy object at 0x00000246FD62BFD0&gt;</code></pre>
+<pre><code>&lt;pandas.core.groupby.generic.SeriesGroupBy object at 0x00000231956EF4F0&gt;</code></pre>
 </div>
 </div>
 <p>What we get is a groupby object and we could apply group functions to it.</p>
@@ -5461,9 +5474,9 @@ An example
 <div class="cell" data-execution_count="116">
 <div class="sourceCode cell-code" id="cb140"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb140-1"><a href="#cb140-1" aria-hidden="true" tabindex="-1"></a>grouped.get_group(<span class="st">'a'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="115">
-<pre><code>0   -0.339109
-1   -1.764599
-4   -2.426196
+<pre><code>0   -0.350086
+1   -0.107462
+4    0.155076
 Name: data1, dtype: float64</code></pre>
 </div>
 </div>
@@ -5472,8 +5485,8 @@ Name: data1, dtype: float64</code></pre>
 <div class="sourceCode cell-code" id="cb142"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb142-1"><a href="#cb142-1" aria-hidden="true" tabindex="-1"></a>grouped.mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="116">
 <pre><code>key1
-a   -1.509968
-b   -0.969645
+a   -0.100824
+b   -0.295766
 Name: data1, dtype: float64</code></pre>
 </div>
 </div>
@@ -5493,13 +5506,13 @@ Name: data1, dtype: int64</code></pre>
 <span id="cb146-3"><a href="#cb146-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'group'</span>, group)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>name a
-group 0   -0.339109
-1   -1.764599
-4   -2.426196
+group 0   -0.350086
+1   -0.107462
+4    0.155076
 Name: data1, dtype: float64
 name b
-group 2   -1.17093
-3   -0.76836
+group 2   -0.245411
+3   -0.346121
 Name: data1, dtype: float64</code></pre>
 </div>
 </div>
@@ -5508,25 +5521,25 @@ Name: data1, dtype: float64</code></pre>
 <div class="sourceCode cell-code" id="cb148"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb148-1"><a href="#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span>(grouped)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="119">
 <pre><code>[('a',
-  0   -0.339109
-  1   -1.764599
-  4   -2.426196
+  0   -0.350086
+  1   -0.107462
+  4    0.155076
   Name: data1, dtype: float64),
  ('b',
-  2   -1.17093
-  3   -0.76836
+  2   -0.245411
+  3   -0.346121
   Name: data1, dtype: float64)]</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="121">
 <div class="sourceCode cell-code" id="cb150"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb150-1"><a href="#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="bu">dict</span>(<span class="bu">list</span>(grouped))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="120">
-<pre><code>{'a': 0   -0.339109
- 1   -1.764599
- 4   -2.426196
+<pre><code>{'a': 0   -0.350086
+ 1   -0.107462
+ 4    0.155076
  Name: data1, dtype: float64,
- 'b': 2   -1.17093
- 3   -0.76836
+ 'b': 2   -0.245411
+ 3   -0.346121
  Name: data1, dtype: float64}</code></pre>
 </div>
 </div>
@@ -5638,31 +5651,31 @@ dtype: object</code></pre>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Ohio</td>
-<td>0.549215</td>
-<td>0.954366</td>
-<td>0.169534</td>
-<td>0.316429</td>
+<td>0.767534</td>
+<td>0.772175</td>
+<td>0.936214</td>
+<td>0.665185</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Colorado</td>
-<td>0.838965</td>
-<td>0.095267</td>
-<td>0.142920</td>
-<td>0.432461</td>
+<td>0.239010</td>
+<td>0.317945</td>
+<td>0.208979</td>
+<td>0.893111</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Utah</td>
-<td>0.981826</td>
-<td>0.607737</td>
-<td>0.838015</td>
-<td>0.179713</td>
+<td>0.111401</td>
+<td>0.810791</td>
+<td>0.903352</td>
+<td>0.383868</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">New York</td>
-<td>0.545662</td>
-<td>0.663013</td>
-<td>0.339621</td>
-<td>0.115217</td>
+<td>0.717844</td>
+<td>0.674613</td>
+<td>0.558172</td>
+<td>0.293760</td>
 </tr>
 </tbody>
 </table>
@@ -5675,10 +5688,10 @@ dtype: object</code></pre>
 <span id="cb159-2"><a href="#cb159-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb159-3"><a href="#cb159-3" aria-hidden="true" tabindex="-1"></a>data.<span class="bu">apply</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="125">
-<pre><code>one      0.436163
-two      0.859098
-three    0.695095
-four     0.317244
+<pre><code>one      0.656133
+two      0.492846
+three    0.727235
+four     0.599351
 dtype: float64</code></pre>
 </div>
 </div>
@@ -5686,10 +5699,10 @@ dtype: float64</code></pre>
 <div class="cell" data-execution_count="127">
 <div class="sourceCode cell-code" id="cb161"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb161-1"><a href="#cb161-1" aria-hidden="true" tabindex="-1"></a>data.<span class="bu">apply</span>(f, axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="126">
-<pre><code>Ohio        0.784831
-Colorado    0.743698
-Utah        0.802113
-New York    0.547796
+<pre><code>Ohio        0.271028
+Colorado    0.684133
+Utah        0.791952
+New York    0.424085
 dtype: float64</code></pre>
 </div>
 </div>
@@ -5722,17 +5735,17 @@ dtype: float64</code></pre>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">max</td>
-<td>0.926173</td>
-<td>0.916671</td>
-<td>0.786846</td>
-<td>0.931530</td>
+<td>0.877111</td>
+<td>0.458147</td>
+<td>0.818885</td>
+<td>0.939261</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">min</td>
-<td>0.426137</td>
-<td>0.273300</td>
-<td>0.179666</td>
-<td>0.006616</td>
+<td>0.422852</td>
+<td>0.060961</td>
+<td>0.132593</td>
+<td>0.287785</td>
 </tr>
 </tbody>
 </table>
@@ -5775,12 +5788,12 @@ dtype: float64</code></pre>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Ohio</td>
 <td>East</td>
-<td>-0.630114</td>
+<td>-1.373885</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">New York</td>
 <td>East</td>
-<td>0.002650</td>
+<td>-1.822774</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Vermont</td>
@@ -5790,12 +5803,12 @@ dtype: float64</code></pre>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Florida</td>
 <td>East</td>
-<td>-1.282846</td>
+<td>-1.324571</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Oregon</td>
 <td>West</td>
-<td>1.236531</td>
+<td>0.075709</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Nevada</td>
@@ -5805,7 +5818,7 @@ dtype: float64</code></pre>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">California</td>
 <td>West</td>
-<td>0.575734</td>
+<td>-1.382985</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Idaho</td>
@@ -5841,41 +5854,50 @@ Tips
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">location</th>
 <th data-quarto-table-cell-role="th">data</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Ohio</td>
-<td>-0.630114</td>
+<td>East</td>
+<td>-1.373885</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">New York</td>
-<td>0.002650</td>
+<td>East</td>
+<td>-1.822774</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Vermont</td>
-<td>-0.636770</td>
+<td>East</td>
+<td>-1.507077</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Florida</td>
-<td>-1.282846</td>
+<td>East</td>
+<td>-1.324571</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Oregon</td>
-<td>1.236531</td>
+<td>West</td>
+<td>0.075709</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Nevada</td>
-<td>0.906132</td>
+<td>West</td>
+<td>-0.653638</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">California</td>
-<td>0.575734</td>
+<td>West</td>
+<td>-1.382985</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Idaho</td>
-<td>0.906132</td>
+<td>West</td>
+<td>-0.653638</td>
 </tr>
 </tbody>
 </table>
@@ -5895,10 +5917,12 @@ Tips
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
 <th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">location</th>
 <th data-quarto-table-cell-role="th">data</th>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">location</th>
+<th data-quarto-table-cell-role="th"></th>
 <th data-quarto-table-cell-role="th"></th>
 <th data-quarto-table-cell-role="th"></th>
 </tr>
@@ -5907,36 +5931,44 @@ Tips
 <tr class="odd">
 <td rowspan="4" data-quarto-table-cell-role="th" data-valign="top">East</td>
 <td data-quarto-table-cell-role="th">Ohio</td>
-<td>-0.630114</td>
+<td>East</td>
+<td>-1.373885</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">New York</td>
-<td>0.002650</td>
+<td>East</td>
+<td>-1.822774</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Vermont</td>
-<td>-0.636770</td>
+<td>East</td>
+<td>-1.507077</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Florida</td>
-<td>-1.282846</td>
+<td>East</td>
+<td>-1.324571</td>
 </tr>
 <tr class="odd">
 <td rowspan="4" data-quarto-table-cell-role="th" data-valign="top">West</td>
 <td data-quarto-table-cell-role="th">Oregon</td>
-<td>1.236531</td>
+<td>West</td>
+<td>0.075709</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Nevada</td>
-<td>0.906132</td>
+<td>West</td>
+<td>-0.653638</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">California</td>
-<td>0.575734</td>
+<td>West</td>
+<td>-1.382985</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Idaho</td>
-<td>0.906132</td>
+<td>West</td>
+<td>-0.653638</td>
 </tr>
 </tbody>
 </table>
@@ -5987,12 +6019,12 @@ Tips
 <td rowspan="4" data-quarto-table-cell-role="th" data-valign="top">East</td>
 <td data-quarto-table-cell-role="th">Ohio</td>
 <td>East</td>
-<td>-0.630114</td>
+<td>-1.373885</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">New York</td>
 <td>East</td>
-<td>0.002650</td>
+<td>-1.822774</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">Vermont</td>
@@ -6002,13 +6034,13 @@ Tips
 <tr class="even">
 <td data-quarto-table-cell-role="th">Florida</td>
 <td>East</td>
-<td>-1.282846</td>
+<td>-1.324571</td>
 </tr>
 <tr class="odd">
 <td rowspan="4" data-quarto-table-cell-role="th" data-valign="top">West</td>
 <td data-quarto-table-cell-role="th">Oregon</td>
 <td>West</td>
-<td>1.236531</td>
+<td>0.075709</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Nevada</td>
@@ -6018,7 +6050,7 @@ Tips
 <tr class="odd">
 <td data-quarto-table-cell-role="th">California</td>
 <td>West</td>
-<td>0.575734</td>
+<td>-1.382985</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">Idaho</td>
@@ -6084,7 +6116,7 @@ Chaining commands
 <tr class="even">
 <td data-quarto-table-cell-role="th">West</td>
 <td>Oregon</td>
-<td>1.236531</td>
+<td>0.075709</td>
 </tr>
 </tbody>
 </table>
@@ -7205,19 +7237,19 @@ df
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>0.009510</td>
+<td>1.053859e-02</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>0.004665</td>
+<td>7.679894e-01</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>0.000007</td>
+<td>2.567440e-16</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>0.015077</td>
+<td>2.442999e-05</td>
 </tr>
 </tbody>
 </table>
@@ -7270,19 +7302,19 @@ df
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>0.374771</td>
+<td>0.178546</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>0.394530</td>
+<td>0.161933</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>0.297902</td>
+<td>0.415794</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>0.568871</td>
+<td>0.095408</td>
 </tr>
 </tbody>
 </table>
