@@ -120,7 +120,6 @@ df %>%
                 x=ending, 
                 y=ending_counts, 
                 fill=year,
-                group=year
                 ), 
             position = "dodge",
         ) +
