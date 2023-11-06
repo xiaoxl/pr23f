@@ -11,10 +11,41 @@ format:
 
 Note that all the following steps are tested in Windows 10/11. If you use other operation systems please contact me.
 
-1. Go to [Anaconda download page](https://www.anaconda.com/). Download and install Anaconda. 
+1. Go to [Miniconda download page](https://docs.conda.io/projects/miniconda/en/latest/). Download and install Miniconda, and set things up in the following way.
+   
+
+::: {.callout-note collapse="true"} 
+# More details.
+
+1. Miniconda is Python + conda, without any unessential packages. We choose this version because it is fast: the download package is small and easy to install.
+2. After you finish installing Miniconda, you may find the `Anaconda Prompt (miniconda 3)` from the start menu. Click it to start using it.
+3. You may use the following command to install packages that is used in this course. More on this will be discussed later.
+
+```{.bash}
+conda install pandas numpy matplotlib seaborn
+```
+4. If you feel conda is slow, you may change the `conda solver` to be `libmamba` using the following command. It may be faster than the classic conda solver.
+
+
+```{.bash}
+conda config --set solver libmamba
+```
+
+5. Once these packages are installed, you may close the command prompt window and proceed to the next step.
+
+:::
+
+::: {.callout-note collapse="true"}
+# An alternative way.
+
+
+If you have enough time and space, you may go to [Anaconda download page](https://www.anaconda.com/), download and install Anaconda. 
+
+Anaconda is Miniconda + tons of preinstalled packages + many other tools that may not be used in this course. 
+::: 
+
 
 2. Go to [VS Code download page](https://code.visualstudio.com/). Download and install VS Code. Actually Anaconda contains one copy of VS Code. Here I just assume that some of you intall VS Code before Anaconda.
-
 3. When installing VS Code, you may accept all default settings. When installing Anaconda, please pay attention to the `PATH` setting. 
 
 ![](assests/img/20220817231206.png){fig-align="center"}

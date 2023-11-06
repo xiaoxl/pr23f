@@ -15,7 +15,7 @@ Notebook is another very popular mode to use Python. We will talk about it later
 In this section we are going to setup the Python developing environment.
 
 #### VS Code + Anaconda
-Click [Appendix -@sec-vscode] to see the detailed steps for VS Code and Anaconda. You may also check out [the official document](https://code.visualstudio.com/docs/languages/python). It contains more features but less details.
+Click [Appendix -@sec-vscode] to see the detailed steps for VS Code and conda. You may also check out [the official document](https://code.visualstudio.com/docs/languages/python). It contains more features but less details.
 
 We will talk about the relation between Python and Anaconda and more about packages sometime later.
 

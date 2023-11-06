@@ -174,32 +174,3 @@ _ = ax.set_xlim(-250, 250)
 _ = ax.set_ylim(0, 400)
 ```
 :::
-
-````{=html}
-<!-- 
-<details>
-<summary>Click for Hint.</summary>
-
-::: {.solution}
-## Hint
-
-```{python}
-#| eval: false
-from nba_api.stats.static import players
-from nba_api.stats.endpoints import shotchartdetail
-player_dict = players.get_players()
-```
-These lines import some packages and get player information and save them into `player_dict`.
-
-```{python}
-#| eval: false
-for player in player_dict:
-    if player['full_name'] == 'Stephen Curry':
-        print(player['id'])
-```
-Go through all records in `player_dict`. If the name of a player is `Stephen Curry`, get his `id`. Then we will know the `id` of `Stephen Curry`.
-
-*To be omitted.*
-:::
-</details> -->
-````
